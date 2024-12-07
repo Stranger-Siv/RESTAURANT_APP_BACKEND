@@ -5,6 +5,8 @@ import {dbConnection} from "./database/dbConnection.js"
 import {errorMiddleware} from "./error/error.js"
 import reservationRouter from "./routes/reservationRoute.js"
 import franchiseRouter from "./routes/franchiseRoute.js"
+import axios from 'axios'
+
 const app = express()
 dotenv.config({path: "./config/config.env"})
 
