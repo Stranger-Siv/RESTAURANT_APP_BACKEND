@@ -4,6 +4,7 @@ import { Franchise } from "../models/franchiseSchema.js";
 
 export const sendFranchise = async (req, res, next) => {
   const { firstName, lastName, email, date, place, phone } = req.body;
+  
   if (!firstName || !lastName || !email || !date || !place || !phone) {
     return next(new ErrorHandler("Please Fill Full Franchise Form!", 400));
   }
