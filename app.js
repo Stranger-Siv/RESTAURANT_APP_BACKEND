@@ -16,7 +16,7 @@ app.use(cors({
     credentials: true
 }))
 
-const url = `https://restaurant-app-backend-jvif.onrender.com`;
+const url = `https://restaurant-app-backend-163q.onrender.com`;
 const interval = 30000;
 
 function reloadWebsite() {
